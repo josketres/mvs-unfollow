@@ -1,0 +1,33 @@
+<div class="jumbotron">
+  <h1>MVS Unfollow</h1>
+  <p class="lead">
+    #EnDefensaDeAristegui vamos a dejar de seguir las cuentas de twitter de MVS y de comunicadores que trabajen con esta empresa corrupta.
+  </p>
+  <p>
+    <a ng-hide="authenticated" class="btn btn-lg btn-success" ng-click="connectButton()">Conectate con twitter <span class="glyphicon glyphicon-ok"></span></a>
+  </p>
+</div>
+
+<div class="row marketing">
+  <div class="col-xs-12">
+    <button ng-click="refreshTimeline()" id="getTimelineButton" type="button" class="btn btn-info" style="display:none;">Get My Timeline</button>
+    <button ng-show="authenticated" ng-click="signOut()" type="button" class="btn btn-link">Sign Out</button>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12" id="results">
+      <div class="row" ng-repeat="u in usersToUnfollow">
+        <div class="col-sm-1">
+          <img ng-src="{{u.profile_image_url}}" class="img-circle">
+        </div>
+        <div class="col-sm-3">
+          {{u.name}}
+        </div>
+        <div class="col-sm-8">
+          <button ng-show="u.following" ng-click="unfollow(u.id_str)" type="button" class="btn btn-info">Dejar de seguir</button>
+          <p ng-hide="u.following">Felicidades, no sigues a este empleado de MVS.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
