@@ -2,8 +2,16 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
+    <title>No m&aacute;s MVS - Dejemos de seguir las cuentas de MVS en twitter</title>
+    <meta name="description" content="#EndefensadeAristegui3 dejemos de seguir las cuentas de MVS en twitter">
+    <meta property="og:title"
+    content="No m&aacute;s MVS - Dejemos de seguir las cuentas de MVS en twitter" />
+    <meta property="og:description" content="#EndefensadeAristegui3 dejemos de seguir las cuentas de MVS en twitter." />
+    <meta property="fb:app_id" content="982947961730970" />
+    <meta property="og:url" content="http://josketres.github.io/mvs-unfollow/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/josketres/mvs-unfollow/master/app/images/fb.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="No m&aacute;s MVS"/>
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
@@ -19,34 +27,8 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">mvsUnfollow</a>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
     <div class="container">
     <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
     </div>
 
 
@@ -73,6 +55,7 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/oauth-js/dist/oauth.min.js"></script>
+    <script src="bower_components/angulike/angulike.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -81,6 +64,7 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/services/twitterservice.js"></script>
+        <script src="scripts/directives/facebooklike.js"></script>
         <!-- endbuild -->
 </body>
 </html>

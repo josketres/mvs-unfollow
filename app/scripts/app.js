@@ -30,4 +30,10 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .run([
+    '$rootScope',
+    function($rootScope) {
+      $rootScope.facebookAppId = '982947961730970';
+    }
+  ]);
