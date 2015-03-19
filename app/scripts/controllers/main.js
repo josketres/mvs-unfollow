@@ -16,7 +16,7 @@ angular.module('mvsUnfollowApp')
 
 		$scope.refreshUsersToUnfollow = function() {
 
-			var ids = ['NoticiasMVS', 'LuisCardenasMx'];
+			var ids = ['NoticiasMVS', 'LuisCardenasMx', 'ezshabot', 'exafm', 'lamejor'];
 			twitterService.getUsersToUnfollow(ids).then(function(data) {
 				$scope.usersToUnfollow = data;
 			});
