@@ -1,5 +1,7 @@
 # mvs-unfollow
 
+Aplicación web sencilla para sugerir al usuario una lista de cuentas de twitter a las que hay que dejar de seguir como protesta por el despido de la periodista Carmen Aristegui y varios miembros de su equipo de trabajo.
+
 Como utilizar (desarrollo)
 -----
 Una vez instalados los prerequisitos, se puede correr la aplicación de la siguiente manera:
